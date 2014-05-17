@@ -24,17 +24,19 @@ All tools should be web-based, simple to use but powerful, useful for collaborat
 - [Q&A from participants via issue tracker][new-question]
 - [Suggestions for future topics via issue tracker][topic-suggestion]
 
-### Codio.com
+### [Codio.com][codio-project-url]
 - Real-time collaborative coding for all participants and presenter
 - No-nonsense web-based IDE
 - It's cool
 
-### Slid.es
+### [Slid.es][slides]
 - Slides to drive the session content
 - Public, so useful for reference
 
 
+[codio-project-url]: http://bit.ly/1hSzb7i
 [milestones]: https://github.com/Widen/javascript-101/issues/milestones
 [new-question]: https://github.com/Widen/javascript-101/issues/new?labels=question
 [plan]: https://github.com/Widen/javascript-101/issues?labels=plan&page=1&state=open
+[slides]: http://slid.es
 [topic-suggestion]: https://github.com/Widen/javascript-101/issues/new?labels=suggestion
