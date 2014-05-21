@@ -24,16 +24,22 @@ All tools should be web-based, simple to use but powerful, useful for collaborat
 - [Q&A from participants via issue tracker][new-question]
 - [Suggestions for future topics via issue tracker][topic-suggestion]
 
+### [Slid.es][slides]
+- Slides to drive the session content
+- Public, so useful for reference
+
+### [Chrome][chrome]
+- Cutting edge features, highly intuitive.
+- The best developer tools console of any browser.  
+- Useful for creating and executing small code snippets without any other tools
+
 ### [Codio.com][codio-project-url]
 - Real-time collaborative coding for all participants and presenter
 - No-nonsense web-based IDE
 - It's cool
 
-### [Slid.es][slides]
-- Slides to drive the session content
-- Public, so useful for reference
 
-
+[chrome]: https://www.google.com/intl/en_us/chrome/browser/
 [codio-project-url]: http://bit.ly/1hSzb7i
 [milestones]: https://github.com/Widen/javascript-101/issues/milestones
 [new-question]: https://github.com/Widen/javascript-101/issues/new?labels=question
