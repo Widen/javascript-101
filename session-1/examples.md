@@ -3,6 +3,16 @@ Examples
 
 The following is a set of examples from the session 1 presentation.
 
+# Outline
+1. [Objects](#objects)
+2. [Functions](#functions)
+3. [Primitves](#primitives)
+4. [Variables](#variables)
+5. [Outputting text](#outputting-text)
+6. [Arrays](#arrays)
+7. [Including JavaScript on an HTML page](#including-javascript-on-a-page)
+
+
 ## Objects
 
 ### creation
