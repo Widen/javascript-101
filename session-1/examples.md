@@ -56,7 +56,7 @@ for (var i = 0; i < props.length; i++) {
     console.log("prop: " + prop + "; value: " + myObject[prop]);
 }
 
-// simple, but with a big draw (which we can overcome with a few more lines)
+// simple, but with a big drawback (which we can overcome with a few more lines)
 // the drawback will be discussed in a later session
 for (var prop in myObject) {
     console.log("prop: " + prop + "; value: " + myObject[prop]);
@@ -65,7 +65,109 @@ for (var prop in myObject) {
 
 
 ## Functions
-...coming soon
+
+### creating
+```javascript
+// this will print "invoked" to the console when executed
+var myFunc = function() {
+    console.log("invoked!");
+};
+
+// objects can have properties with function values too
+var myObject = {
+    callMe: function() {
+        console.log("called!");
+    }
+};
+```
+
+### invoking
+```javascript
+var myFunc = function() {
+    console.log("invoked!");
+};
+
+// this executes the myFunc function
+myFunc();
+```
+
+### passing arguments
+```javascript
+var logMessage = function(message) {
+    console.log(message);
+};
+
+// "this is a message" will be logged to the console
+logMessage("this is a message");
+
+
+var printNameAndAge = function(name, age) {
+    console.log("Hello " + name + ".  I hear you are " + age + " years old.");
+};
+
+// prints "Hello Ray.  I hear you are 33 years old." to the console
+printNameAndAge("Ray", 33);
+
+
+// You can make use of the arguments psuedo-array for functions that take 
+// a variable number of arguments.  Be careful, pseudo arrays are not actually arrays, 
+// just objects with a length property.  We'll talk more about arrays later in this examples page.
+var addAllNumbers = function() {
+    var sum = 0;
+    for (var i = 0; i < arguments.length; i++) {
+        sum += arguments[i];
+    }
+    
+    console.log(sum);
+};
+
+// prints 15 to the console
+addAllNumbers(1, 2, 3, 4, 5);
+```
+### types of functions
+
+#### named
+```javascript
+// invoke this by referring to its name
+function myFunc() {
+    // ...
+};
+```
+
+#### anonymous
+```javascript
+// A function without a name.  Can be passed and executed later by reference.  
+// Also used with IIFEs (see below)
+function() {
+    // ...
+}
+```
+
+#### function expressions
+```javascript
+// Just a function explicity assigned to a variable.
+// ee further down for more examples of variables.
+var myFunc = function() {
+    // ...
+};
+```
+
+#### function declarations
+```javascript
+// Can still be invoked simply by calling the name of the function.
+function myFunc() {
+    // ...
+}
+```
+
+#### Immediately Invoked Function Expressions (IIFE)
+```javascript
+// This function is invoked automatically, as soon as the JS parser hits it.  
+// The use of IIFes will become more clear once we discuss scope in more detail in a later session.
+(function() {
+    console.log("executed as soon as the JavaScript interpreter reaches this");    
+}());
+```
 
 ## Primitives
 ...coming soon
