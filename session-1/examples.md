@@ -209,7 +209,94 @@ console.log(true.toString());
 
 
 ## Variables
-...coming soon
+Global variables in the browser are always part of the [`window` object][window]:
+```javascript
+// the two statements below are functionally equivalent
+window.console.log("hi");
+console.log("hi");
+
+
+// this will set a global variable named `hi` to have a value of "hi"
+hi = "hi";
+
+// the two statements below are functionally equivalent
+console.log(window.hi);
+console.log(hi);
+
+```
+
+
+When a variable is referenced, the JavaScript interpreter will check the current function to see if the variable was declared there.  If not, it moves up to the parent function, and continues until it either hits the global namespace (`window` in the browser) if it does not find a match first.  If no match is found, a [`ReferenceError`][re] is thrown.
+
+```javascript
+function one() {
+    var a = "hi";
+    
+    // outputs "hi"
+    console.log(a);
+    
+    function two() {
+        var a = "hello";
+        
+        // outputs "hello"
+        console.log(a);
+        
+        function three() {
+            // outputs "hello";
+            console.log(a);
+        }
+        
+        three();
+        
+        // outputs "hello"
+        console.log(a);
+    }
+    
+    two();
+    
+    // outputs "hi"
+    console.log(a);
+}
+
+one();
+```
+
+Note that none of the `var a` statements above "replace" the existing `a` variable.  Instead, the variable is *shadowed* with the new declared value inside of the function it was re-declared.  This is more obvious when studying the example above.  
+
+If the `var` portion of the statement is omitted, then something a bit different happens: 
+```javascript
+function one() {
+    var a = "hi";
+    
+    // outputs "hi"
+    console.log(a);
+    
+    function two() {
+        a = "hello";
+        
+        // outputs "hello"
+        console.log(a);
+        
+        function three() {
+            // outputs "hello";
+            console.log(a);
+        }
+        
+        three();
+        
+        // outputs "hello"
+        console.log(a);
+    }
+    
+    two();
+    
+    // outputs "hello"
+    console.log(a);
+}
+
+one();
+```
+
 
 ## Outputting Text
 ...coming soon
@@ -221,3 +308,5 @@ console.log(true.toString());
 ...coming soon
 
 
+[re]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError
+[window]: https://developer.mozilla.org/en-US/docs/Web/API/Window
