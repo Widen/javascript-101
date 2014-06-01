@@ -179,8 +179,34 @@ function myFunc() {
 }());
 ```
 
+
 ## Primitives
-...coming soon
+
+### 5 types
+1. `null` (a value explicitly set to a variable or property)
+2. `undefined` (the default value when a variable has been declared without an explicit value)
+3. strings: `"hi there"`
+4. booleans: `true` and `false`
+5. numbers: `1`, `1.5`, `-3`
+
+### NOTE: Primitives are objects too
+- Except for `null` and `undefined`.
+- When you attempt to access a property on a primitive, the JavaScript interpreter constructs the associated Object (`Boolean`, `String`, `Number`) and passes the primitive in as a parameter.  The result is an `Object`, which you can call methods on.
+
+```javascript
+// outputs "hi"
+console.log("HI".toLowerCase());
+
+// outputs "true"
+console.log(true.toString());
+
+// outputs 10.000 - note that we must wrap the number to access its associated object
+(10).toFixed(3);
+
+// identical to above, just another way to access the Number object
+10..toFixed(3);
+```
+
 
 ## Variables
 ...coming soon
