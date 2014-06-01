@@ -347,7 +347,8 @@ myArray.splice(2, 0, "two.1");
 var myArray = ["one", "two", "three"];
 
 for (var i = 0; i < myArray.length; i++) {
-    // this will run three times, and output "one", "two", and "three" for the three resepective iterations
+    // this will run three times, and output "one", "two", and "three" 
+    // for the three resepective iterations
     console.log(myArray[i]);
 }
 
@@ -355,15 +356,26 @@ for (var i = 0; i < myArray.length; i++) {
 // In "newer browsers", you can iterate over arrays this way if you want.  
 // This is functionally equivalent to the above loop, but more intuitive.
 myArray.forEach(function(element) {
-    // this will run three times, and output "one", "two", and "three" for the three resepective iterations
+    // this will run three times, and output "one", "two", and "three" 
+    // for the three resepective iterations
     console.log(element);
 });
 ```
 
 
 ## Including JavaScript on a Page
-...coming soon
 
+### via a `<script>` tag that includes your code as the content of the element
+```html
+<script>
+    console.log("hello widen!");
+</script>
+```
+
+### via a `<script>` tag with a `src` attribute that points at a file containing your code
+```html
+<script src="hello.js"></script>
+```
 
 [re]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError
 [window]: https://developer.mozilla.org/en-US/docs/Web/API/Window
