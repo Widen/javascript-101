@@ -8,9 +8,8 @@ The following is a set of examples from the session 1 presentation.
 2. [Functions](#functions)
 3. [Primitves](#primitives)
 4. [Variables](#variables)
-5. [Outputting text](#outputting-text)
-6. [Arrays](#arrays)
-7. [Including JavaScript on an HTML page](#including-javascript-on-a-page)
+5. [Arrays](#arrays)
+6. [Including JavaScript on an HTML page](#including-javascript-on-a-page)
 
 
 ## Objects
@@ -297,9 +296,6 @@ function one() {
 one();
 ```
 
-
-## Outputting Text
-...coming soon
 
 ## Arrays
 ...coming soon
