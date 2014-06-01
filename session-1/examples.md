@@ -188,7 +188,7 @@ function myFunc() {
 4. booleans: `true` and `false`
 5. numbers: `1`, `1.5`, `-3`
 
-### NOTE: Primitives are objects too
+### primitives are objects too
 - Except for `null` and `undefined`.
 - When you attempt to access a property on a primitive, the JavaScript interpreter constructs the associated Object (`Boolean`, `String`, `Number`) and passes the primitive in as a parameter.  The result is an `Object`, which you can call methods on.
 
@@ -298,7 +298,68 @@ one();
 
 
 ## Arrays
-...coming soon
+
+### creation
+```javascript
+// literal
+var myArray = [1, 2, 3];
+
+// constructor
+var myArray = new Array(1, 2, 3);
+
+// mixed type elements are ok
+var myArray = [1, "two", function() {return 3;}];
+```
+
+### accessing elements
+```javascript
+var myArray = ["one", "two", "three"];
+
+// outputs "two" - remember, arrays are 0-indexed
+console.log([1]);
+```
+
+### removing elements
+```javascript
+var myArray = ["one", "two", "three"];
+
+// afterwards, the array looks like this: ["one", "three"]
+myArray.splice(1, 1);
+
+// outputs 2
+console.log(myArray.length);
+
+// afterwards, the array is completely empty - no elements exist
+myArray.length = 0;
+```
+
+### adding elements
+```javascript
+var myArray = ["one", "two", "three"];
+
+// afterwards, the array looks like this: ["one", "two", "two.1", three"]
+myArray.splice(2, 0, "two.1");
+```
+
+
+### looping over elements
+```javascript
+var myArray = ["one", "two", "three"];
+
+for (var i = 0; i < myArray.length; i++) {
+    // this will run three times, and output "one", "two", and "three" for the three resepective iterations
+    console.log(myArray[i]);
+}
+
+
+// In "newer browsers", you can iterate over arrays this way if you want.  
+// This is functionally equivalent to the above loop, but more intuitive.
+myArray.forEach(function(element) {
+    // this will run three times, and output "one", "two", and "three" for the three resepective iterations
+    console.log(element);
+});
+```
+
 
 ## Including JavaScript on a Page
 ...coming soon
