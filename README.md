@@ -33,14 +33,14 @@ All tools should be web-based, simple to use but powerful, useful for collaborat
 - The best developer tools console of any browser.  
 - Useful for creating and executing small code snippets without any other tools
 
-### [Codio.com][codio-project-url]
+### [Cloud9 IDE][c9-project-url]
 - Real-time collaborative coding for all participants and presenter
 - No-nonsense web-based IDE
 - It's cool
 
 
 [chrome]: https://www.google.com/intl/en_us/chrome/browser/
-[codio-project-url]: http://bit.ly/1hSzb7i
+[c9-project-url]: https://c9.io/rnicholus/javascript-101
 [milestones]: https://github.com/Widen/javascript-101/issues/milestones
 [new-question]: https://github.com/Widen/javascript-101/issues/new?labels=question
 [plan]: https://github.com/Widen/javascript-101/issues?labels=plan&page=1&state=open
