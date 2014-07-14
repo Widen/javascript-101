@@ -16,6 +16,10 @@ I hope to hold 1 - 1.5 hour sessions every 2-3 weeks, depending on my schedule. 
 Plans will be tracked in the issue tracker, under the [`plan` label][plan].  [Milestones][milestones] will coincide with specific sessions.  Feel free to add comments or suggestions to upcoming session plans.
 
 
+## Resources
+
+- [Learn Javascript in Y Minutes](http://learnxinyminutes.com/docs/javascript/)
+
 ## Learning/Session Tools
 All tools should be web-based, simple to use but powerful, useful for collaboration and after-session reference, and demonstrative of the power of JavaScript.
 
