@@ -81,7 +81,7 @@ Rely on documentation, clear code, and testing to ensure correct use.
 
 Does not coerce the type of the variable.
 
-```
+```javascript
 var zeroStr = '0';
 var zeroInt = 0;
 
@@ -93,7 +93,7 @@ console.log(zeroStr === zeroInt);
 
 Coerces the type of the variable.
 
-```
+```javascript
 var zeroStr = "0";
 var zeroInt = 0;
 
@@ -105,7 +105,7 @@ console.log(zeroStr == zeroInt);
 
 Syntax:
 
-```
+```javascript
 if (<condition>) {
     <expression>
 }
@@ -117,7 +117,7 @@ else {
 }
 ```
 
-```
+```javascript
 var a = 'foo'
 if (a === 'foo') {
     console.log("a === 'foo' !");
