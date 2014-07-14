@@ -138,11 +138,3 @@ else {
 
 I have set up a jsbin with some simple HTML and Javascript. The purpose
 of it is to convert temperatures from Fahrenheit to Celsius and vice versa.
-
-Currently, it does not do that. Your jobs are to figure out why.
-
-Try not to touch the existing code unless you understand it!
-
-Assignment:
-
-1.
