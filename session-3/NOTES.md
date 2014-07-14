@@ -134,7 +134,7 @@ else {
 # Exercise Time
 
 ## 1
-[Exercise 1](http://jsbin.com/sagow/4/edit?html,js,output)
+[Exercise 1](http://jsbin.com/sagow/6/edit)
 
 I have set up a jsbin with some simple HTML and Javascript. The purpose
 of it is to convert temperatures from Fahrenheit to Celsius and vice versa.
