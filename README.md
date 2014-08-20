@@ -42,9 +42,12 @@ All tools should be web-based, simple to use but powerful, useful for collaborat
 - No-nonsense web-based IDE
 - It's cool
 
+### [JSBin]
+- Super-simple to create, run, share, and debug a small web app demonstration.
 
 [chrome]: https://www.google.com/intl/en_us/chrome/browser/
 [c9-project-url]: https://c9.io/rnicholus/javascript-101
+[jsbin]: http://jsbin.com
 [milestones]: https://github.com/Widen/javascript-101/issues/milestones
 [new-question]: https://github.com/Widen/javascript-101/issues/new?labels=question
 [plan]: https://github.com/Widen/javascript-101/issues?labels=plan&page=1&state=open
