@@ -1,3 +1,5 @@
+**Where we left off:** http://jsbin.com/cocuy/1/edit (20-AUG-2014)
+
 Create a JavaScript application that interfaces with a server's file system.  The application should be able
 to send files to the server and report the result of this attempt.  Monitoring the health of the server is an
 additional concern.  The result of a file upload or a server status notification should be displayed as an "alert"
